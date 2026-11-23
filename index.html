@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Explorador de Ubicaciones · Rick and Morty</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="encabezado">
+    <h1 class="encabezado__titulo">Explorador de Ubicaciones</h1>
+    <p class="encabezado__subtitulo">Rick and Morty API</p>
+  </header>
+
+  <main class="principal">
+    <form id="formulario-busqueda" class="buscador" novalidate>
+      <div class="buscador__campo">
+        <label for="campo-nombre">Nombre</label>
+        <input type="text" id="campo-nombre" name="nombre" placeholder="Ej.: Earth">
+      </div>
+      <div class="buscador__campo">
+        <label for="campo-tipo">Tipo</label>
+        <input type="text" id="campo-tipo" name="tipo" placeholder="Ej.: Planet">
+      </div>
+      <button type="submit" id="boton-buscar" class="buscador__boton">Buscar</button>
+    </form>
+
+    <p id="mensaje" class="mensaje" role="status" aria-live="polite"></p>
+
+    <section id="resultados" class="grilla" aria-label="Resultados de la búsqueda"></section>
+  </main>
+
+  <footer class="pie">
+    <p>Trabajo Práctico · Fundamentos de Desarrollo Web · Marcelo Tojas</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
